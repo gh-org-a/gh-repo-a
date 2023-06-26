@@ -14,4 +14,5 @@ jobs:
           owner: roselmamendestw
           repo: gh-repo-b
           github_token: ${{ secrets.gh_token }}
+          workflow_file_name: workflow.yml
 
