@@ -7,8 +7,8 @@ on:
 
 jobs:
   dispara:
-    - uses: convictional/trigger-workflow-and-wait@v1.6.1
-      with:
-        owner: roselmamendestw
-        repo: gh-repo-b
-        github_token: ${{ secrets.gh_token }}
+    uses: convictional/trigger-workflow-and-wait
+    with:
+      owner: roselmamendestw
+      repo: gh-repo-b
+      github_token: ${{ secrets.gh_token }}
