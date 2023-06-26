@@ -1,0 +1,14 @@
+name: "repo a dispara repo b"
+
+on:
+  push:
+    branches: 
+      - main
+
+jobs:
+  dispara:
+    - uses: convictional/trigger-workflow-and-wait@v1.6.1
+      with:
+        owner: roselmamendestw
+        repo: gh-repo-b
+        github_token: ${{ secrets.gh_token }}
